@@ -40,8 +40,8 @@ const font = {
 const style = {
   theme: 'dark', // theme is not necessary when using ThemeProvider (default)
   neutral: 'gray', // sand | gray | slate
-  brand: 'cyan', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: 'red', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  brand: 'magenta', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: 'blue', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: 'contrast', // color | contrast
   solidStyle: 'flat', // flat | plastic
   border: 'playful', // rounded | playful | conservative
@@ -83,10 +83,10 @@ const effects = {
   },
   lines: {
     display: false,
-    opacity: 100,
+    opacity: 40,
     color: 'neutral-alpha-weak',
     size: '16',
-    thickness: 1,
+    thickness: 2,
     angle: 45,
   },
 };
