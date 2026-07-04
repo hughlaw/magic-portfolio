@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: 'Senior Frontend/UX Engineer',
+  role: 'Senior Software and UX Engineer',
   avatar: '/images/avatar.png',
   email: 'hello@hughlaw.dev',
   location: 'Europe/Dublin', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the
@@ -69,7 +69,7 @@ const home = {
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I'm Hugh, a Senior Frontend/UX Engineer at Hedgey Finance,
+        I&apos;m Hugh, a senior software and UX engineer,
         <br /> bridging the gap between design and development.
       </p>
       <p>
@@ -113,8 +113,30 @@ const about = {
     title: 'Work Experience',
     experiences: [
       {
+        company: 'Anchorage Digital',
+        timeframe: 'Dec 2025 – Present',
+        role: 'Member of Technical Staff',
+        achievements: [
+          <>
+            Joined Anchorage Digital following the acquisition of Hedgey Finance,
+            continuing to build token vesting and unlock products on the Token
+            Vesting team.
+          </>,
+          <>
+            Design and develop user interfaces for institutional-grade token
+            vesting, unlock campaigns, and related workflows.
+          </>,
+          <>
+            Apply frontend and UX expertise from Hedgey to Anchorage&apos;s token
+            infrastructure, helping teams and end users navigate complex
+            on-chain vesting scenarios.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: 'Hedgey Finance',
-        timeframe: 'Dec 2021 – Present',
+        timeframe: 'Dec 2021 – Dec 2025',
         role: 'Senior Frontend/UX Engineer',
         achievements: [
           <>
@@ -134,7 +156,7 @@ const about = {
           </>,
           <>
             Developed airdrop claim portals in NextJS to give clients custom UIs
-            to integrate with Hedgey's claim APIs.
+            to integrate with Hedgey&apos;s claim APIs.
           </>,
           <>
             Developed intuitive UX flows tailored for Web3, simplifying complex
@@ -244,7 +266,7 @@ const about = {
         role: 'HCI Designer',
         achievements: [
           <>
-            Developed a new user interface for Singularity's LiveAgility BPM
+            Developed a new user interface for Singularity&apos;s LiveAgility BPM
             Software, an online SaaS version of their BPM software.
           </>,
         ],
