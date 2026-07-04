@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: 'Senior Frontend/UX Engineer',
+  role: 'Member of Technical Staff',
   avatar: '/images/avatar.png',
   email: 'hello@hughlaw.dev',
   location: 'Europe/Dublin', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -69,7 +69,8 @@ const home = {
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I'm Hugh, a Senior Frontend/UX Engineer at Hedgey Finance,
+        I'm Hugh, a Member of Technical Staff on the Token Vesting team at
+        Anchorage Digital,
         <br /> bridging the gap between design and development.
       </p>
       <p>
@@ -113,8 +114,30 @@ const about = {
     title: 'Work Experience',
     experiences: [
       {
+        company: 'Anchorage Digital',
+        timeframe: 'Dec 2025 – Present',
+        role: 'Member of Technical Staff',
+        achievements: [
+          <>
+            Joined Anchorage Digital following the acquisition of Hedgey Finance,
+            continuing to build token vesting and unlock products on the Token
+            Vesting team.
+          </>,
+          <>
+            Design and develop user interfaces for institutional-grade token
+            vesting, unlock campaigns, and related workflows.
+          </>,
+          <>
+            Apply frontend and UX expertise from Hedgey to Anchorage's token
+            infrastructure, helping teams and end users navigate complex
+            on-chain vesting scenarios.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: 'Hedgey Finance',
-        timeframe: 'Dec 2021 – Present',
+        timeframe: 'Dec 2021 – Dec 2025',
         role: 'Senior Frontend/UX Engineer',
         achievements: [
           <>
