@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: 'Member of Technical Staff',
+  role: 'Senior Software and UX Engineer',
   avatar: '/images/avatar.png',
   email: 'hello@hughlaw.dev',
   location: 'Europe/Dublin', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -69,8 +69,7 @@ const home = {
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I'm Hugh, a Member of Technical Staff on the Token Vesting team at
-        Anchorage Digital,
+        I'm Hugh, a senior software and UX engineer at Anchorage Digital,
         <br /> bridging the gap between design and development.
       </p>
       <p>
