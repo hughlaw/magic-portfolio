@@ -69,7 +69,7 @@ const home = {
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I'm Hugh, a senior software and UX engineer at Anchorage Digital,
+        I'm Hugh, a senior software and UX engineer,
         <br /> bridging the gap between design and development.
       </p>
       <p>
