@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the
@@ -69,7 +69,7 @@ const home = {
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I'm Hugh, a senior software and UX engineer,
+        I&apos;m Hugh, a senior software and UX engineer,
         <br /> bridging the gap between design and development.
       </p>
       <p>
@@ -127,7 +127,7 @@ const about = {
             vesting, unlock campaigns, and related workflows.
           </>,
           <>
-            Apply frontend and UX expertise from Hedgey to Anchorage's token
+            Apply frontend and UX expertise from Hedgey to Anchorage&apos;s token
             infrastructure, helping teams and end users navigate complex
             on-chain vesting scenarios.
           </>,
@@ -156,7 +156,7 @@ const about = {
           </>,
           <>
             Developed airdrop claim portals in NextJS to give clients custom UIs
-            to integrate with Hedgey's claim APIs.
+            to integrate with Hedgey&apos;s claim APIs.
           </>,
           <>
             Developed intuitive UX flows tailored for Web3, simplifying complex
@@ -266,7 +266,7 @@ const about = {
         role: 'HCI Designer',
         achievements: [
           <>
-            Developed a new user interface for Singularity's LiveAgility BPM
+            Developed a new user interface for Singularity&apos;s LiveAgility BPM
             Software, an online SaaS version of their BPM software.
           </>,
         ],
