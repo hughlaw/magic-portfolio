@@ -1,22 +1,23 @@
 module.exports = {
   plugins: [
+    '@tailwindcss/postcss',
     [
-      "@csstools/postcss-global-data",
+      '@csstools/postcss-global-data',
       {
-        files: ["src/once-ui/styles/breakpoints.scss"],
+        files: ['src/once-ui/styles/breakpoints.scss'],
       },
     ],
-    "postcss-custom-media",
-    "postcss-flexbugs-fixes",
+    'postcss-custom-media',
+    'postcss-flexbugs-fixes',
     [
-      "postcss-preset-env",
+      'postcss-preset-env',
       {
         autoprefixer: {
-          flexbox: "no-2009",
+          flexbox: 'no-2009',
         },
         stage: 3,
         features: {
-          "custom-properties": false,
+          'custom-properties': false,
         },
       },
     ],

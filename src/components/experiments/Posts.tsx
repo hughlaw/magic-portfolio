@@ -15,7 +15,7 @@ export function Posts({
   thumbnail = false,
   direction,
 }: PostsProps) {
-  let allBlogs = getPosts(['src', 'app', 'blog', 'posts']);
+  let allBlogs = getPosts(['src', 'app', 'experiments', 'posts']);
 
   const sortedBlogs = allBlogs.sort((a, b) => {
     return (

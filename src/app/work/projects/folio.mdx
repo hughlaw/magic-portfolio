@@ -1,0 +1,39 @@
+---
+title: "Folio"
+publishedAt: "2026-10-01"
+summary: "Personal accounting and finance tracking app"
+images:
+  - "/images/projects/folio/folio.jpg"
+team:
+  - name: "Hugh Law"
+    role: "Design Engineer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/hughlaw/"
+link: "https://accounts.hughlaw.dev/demo"
+---
+
+## Overview
+
+Folio is a personal finance tracker I designed and built to replace an old finance tracking app I used. It's a fast, mobile-friendly app for reporting on spending, accounts, mortgage, investments and forecasts. While the version I see is locked, I have a (demo version with sample data available)[https://accounts.hughlaw.dev/demo].
+
+## Key Features
+
+- **CSV import pipeline**: Drag-and-drop or API-driven import of transactions with automatic file detection, duplicate transaction removal and rollback capability.
+- **Rules-based categorisation**: A unit-tested rules engine sorts transactions as they come in, merchants are recognised automatically, and anything unmatched goes to a review inbox.
+- **Dashboard & reporting**: Animated charts and interactive graphs show spending trends over time.
+- **Mortgage simulator**: A custom amortisation tool that allows me to see how various variables alter mortgage repayments and total interst.
+- **Investment tracking**: Brokerage holdings tracked with gain/loss against cost basis, plus a live crypto portfolio.
+- **Cash-flow forecasting**: Recurring transactions are detected and used to project balances over 3, 6 and 12 months.
+- **Multi-currency**: EUR base currency, with exchange rates from the ECB cached in the database for non-euro transactions.
+- **Installable PWA**: A mobile-first layout with a sidebar on desktop and bottom tabs on mobile, installable to the home screen.
+
+## Technologies Used
+
+- **SvelteKit (Svelte 5)**: Full-stack framework with server-side rendering
+- **TypeScript**
+- **Tailwind CSS v4 & shadcn-svelte**: A consistent, accessible component system
+- **LayerChart**: D3-based, Svelte-native animated charts
+- **Neon Postgres & Drizzle ORM**
+- **Cloudflare Workers**
+- **Cloudflare Access**: Zero Trust auth, with JWT verification
+- **Vitest**: Unit tests for the categorisation, forecasting and amortisation logic

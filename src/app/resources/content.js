@@ -352,6 +352,29 @@ const blog = {
   // All posts will be listed on the /blog route
 };
 
+
+const experiments = {
+  path: '/experiments',
+  label: 'Experiments',
+  title: 'Experiments',
+  description: `Experiments by ${person.name}`,
+  experiments: [
+    {
+      title: 'GSAP Animations',
+      description:
+        'Exploring advanced animations and transitions using GSAP (GreenSock Animation Platform)',
+      link: '/experiments/gsap',
+      tags: ['GSAP', 'Animation', 'React'],
+    },
+    {
+      title: 'Experiment 2',
+      description: 'Experiment 2 description',
+      link: '/experiments/experiment-2',
+      tags: ['React', 'TypeScript'],
+    },
+  ],
+};
+
 const work = {
   path: '/work',
   label: 'Work',
@@ -412,4 +435,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, experiments, work, gallery };
