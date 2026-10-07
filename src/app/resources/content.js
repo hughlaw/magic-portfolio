@@ -1,15 +1,15 @@
-import { Flex, Logo } from '@/once-ui/components';
+import { Flex, Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: 'Hugh',
-  lastName: 'Law',
+  firstName: "Hugh",
+  lastName: "Law",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: 'Senior Software and UX Engineer',
-  avatar: '/images/avatar.png',
-  email: 'hello@hughlaw.dev',
-  location: 'Europe/Dublin', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  role: "Senior Software, UX & Design Engineer",
+  avatar: "/images/avatar.png",
+  email: "hello@hughlaw.dev",
+  location: "Europe/Dublin", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -28,31 +28,31 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: 'GitHub',
-    icon: 'github',
-    link: 'https://github.com/hughlaw',
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/hughlaw",
   },
   {
-    name: 'LinkedIn',
-    icon: 'linkedin',
-    link: 'https://www.linkedin.com/in/hughlaw/',
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/hughlaw/",
   },
   {
-    name: 'X',
-    icon: 'x',
-    link: '',
+    name: "X",
+    icon: "x",
+    link: "",
   },
   {
-    name: 'Email',
-    icon: 'email',
+    name: "Email",
+    icon: "email",
     link: `mailto:${person.email}`,
   },
 ];
 
 const home = {
-  path: '/',
-  image: '/images/og/home.jpg',
-  label: 'Home',
+  path: "/",
+  image: "/images/og/home.jpg",
+  label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   // headline: <>Designing, developing and delivering digital delights</>,
@@ -64,26 +64,26 @@ const home = {
         Recent project: <strong className="ml-4">Once UI</strong>
       </>
     ),
-    href: '/work/building-once-ui-a-customizable-design-system',
+    href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <Flex direction="column" gap="12">
       <p>
-        I&apos;m Hugh, a senior software and UX engineer,
+        I&apos;m Hugh, a senior software, UX & Design engineer,
         <br /> bridging the gap between design and development.
       </p>
       <p>
-        I specialize in designing and building beautiful, accessible, and
-        performant web applications.
+        I specialize in designing and building beautiful, easy to use,
+        accessible and performant web applications.
       </p>
     </Flex>
   ),
 };
 
 const about = {
-  path: '/about',
-  label: 'About',
-  title: `About – ${person.name}`,
+  path: "/about",
+  label: "About",
+  title: `About - ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -94,50 +94,50 @@ const about = {
   },
   calendar: {
     display: false,
-    link: 'https://cal.com',
+    link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: 'Introduction',
+    title: "Introduction",
     description: (
       <>
-        Hugh is a Ireland-based developer with a unique skill set the blends UX
-        design with frontend development. With 20+ years experience designing
-        and building web experiences from concept to production, he is able to
+        I'm a developer based in Ireland with a unique skill set the blends UX
+        design with development. With 20+ years experience designing and
+        building web experiences from concept to production, he is able to
         uniquely navigate both design and development challenges.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: 'Work Experience',
+    title: "Work Experience",
     experiences: [
       {
-        company: 'Anchorage Digital',
-        timeframe: 'Dec 2025 – Present',
-        role: 'Member of Technical Staff',
+        company: "Anchorage Digital",
+        timeframe: "Dec 2025 – Present",
+        role: "Member of Technical Staff",
         achievements: [
           <>
-            Joined Anchorage Digital following the acquisition of Hedgey Finance,
-            continuing to build token vesting and unlock products on the Token
-            Vesting team.
+            Joined Anchorage Digital following the acquisition of Hedgey
+            Finance, continuing to build token vesting and unlock products on
+            the Token Vesting team.
           </>,
           <>
             Design and develop user interfaces for institutional-grade token
             vesting, unlock campaigns, and related workflows.
           </>,
           <>
-            Apply frontend and UX expertise from Hedgey to Anchorage&apos;s token
-            infrastructure, helping teams and end users navigate complex
+            Apply frontend and UX expertise from Hedgey to Anchorage&apos;s
+            token infrastructure, helping teams and end users navigate complex
             on-chain vesting scenarios.
           </>,
         ],
         images: [],
       },
       {
-        company: 'Hedgey Finance',
-        timeframe: 'Dec 2021 – Dec 2025',
-        role: 'Senior Frontend/UX Engineer',
+        company: "Hedgey Finance",
+        timeframe: "Dec 2021 – Dec 2025",
+        role: "Senior Fullstack/UX Engineer",
         achievements: [
           <>
             Designed and developed component libraries using Storybook,
@@ -145,12 +145,12 @@ const about = {
             performant, maintainable, and scalable UIs.
           </>,
           <>
-            Implemented{' '}
+            Implemented{" "}
             <a href="https://app.hedgey.finance" target="_blank">
               app.hedgey.finance
-            </a>{' '}
-            which has facilitated over{' '}
-            <strong>$1B in transaction volume</strong> and secures over{' '}
+            </a>{" "}
+            which has facilitated over{" "}
+            <strong>$1B in transaction volume</strong> and secures over{" "}
             <strong>$250M in Total Value Locked (TVL)</strong> through its
             interfaces and smart contracts.
           </>,
@@ -169,23 +169,23 @@ const about = {
         ],
         images: [
           {
-            src: '/images/projects/hedgey/hedgey-01.jpeg',
-            alt: 'Hedgey Finance Project',
+            src: "/images/projects/hedgey/hedgey-01.jpeg",
+            alt: "Hedgey Finance Project",
             width: 16,
             height: 9,
           },
           {
-            src: '/images/projects/hedgey/hedgey-02.jpeg',
-            alt: 'Hedgey Finance Project',
+            src: "/images/projects/hedgey/hedgey-02.jpeg",
+            alt: "Hedgey Finance Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: 'Better Examinations Online',
-        timeframe: 'Mar 2020 – Dec 2021',
-        role: 'UX Lead / Frontend Developer',
+        company: "Better Examinations Online",
+        timeframe: "Mar 2020 - Dec 2021",
+        role: "UX Lead / Frontend Developer",
         achievements: [
           <>
             Primary advocate for user-based decisions in product roadmap and UX
@@ -202,23 +202,23 @@ const about = {
         ],
         images: [
           {
-            src: '/images/projects/better-examinations/better-examinations-01.jpeg',
-            alt: 'Better Examinations Project',
+            src: "/images/projects/better-examinations/better-examinations-01.jpeg",
+            alt: "Better Examinations Project",
             width: 16,
             height: 9,
           },
           {
-            src: '/images/projects/better-examinations/better-examinations-02.jpeg',
-            alt: 'Better Examinations Project',
+            src: "/images/projects/better-examinations/better-examinations-02.jpeg",
+            alt: "Better Examinations Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: 'Terminalfour',
-        timeframe: 'May 2014 – Mar 2020',
-        role: 'UX Lead / Frontend Developer',
+        company: "Terminalfour",
+        timeframe: "May 2014 – Mar 2020",
+        role: "UX Lead / Frontend Developer",
         achievements: [
           <>
             Reimagined, designed, and drove the implementation of new product UI
@@ -235,17 +235,17 @@ const about = {
         ],
         images: [
           {
-            src: '/images/projects/terminalfour/terminalfour-01.jpeg',
-            alt: 'Terminalfour Project',
+            src: "/images/projects/terminalfour/terminalfour-01.jpeg",
+            alt: "Terminalfour Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: 'Terminalfour',
-        timeframe: 'May 2011 – May 2014',
-        role: 'Web Developer / Designer',
+        company: "Terminalfour",
+        timeframe: "May 2011 – May 2014",
+        role: "Web Developer / Designer",
         achievements: [
           <>
             Worked on large-scale client projects for universities and
@@ -261,21 +261,21 @@ const about = {
         images: [],
       },
       {
-        company: 'Singularity',
-        timeframe: 'Jun 2009 – Sep 2009',
-        role: 'HCI Designer',
+        company: "Singularity",
+        timeframe: "Jun 2009 – Sep 2009",
+        role: "HCI Designer",
         achievements: [
           <>
-            Developed a new user interface for Singularity&apos;s LiveAgility BPM
-            Software, an online SaaS version of their BPM software.
+            Developed a new user interface for Singularity&apos;s LiveAgility
+            BPM Software, an online SaaS version of their BPM software.
           </>,
         ],
         images: [],
       },
       {
-        company: 'Marble Multimedia',
-        timeframe: 'Jan 2002 – May 2011',
-        role: 'Freelance Web Developer / Graphic Designer',
+        company: "Marble Multimedia",
+        timeframe: "Jan 2002 – May 2011",
+        role: "Freelance Web Developer / Graphic Designer",
         achievements: [
           <>
             Worked as a freelance web developer and graphic designer for a
@@ -288,14 +288,14 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: 'Education',
+    title: "Education",
     institutions: [
       {
-        name: 'University of Ulster',
+        name: "University of Ulster",
         description: <>MSc Computing & Creative Technology - Distinction</>,
       },
       {
-        name: 'University of Ulster',
+        name: "University of Ulster",
         description: (
           <>BSc Hon Multimedia Computing & Design - 1st Class Honours</>
         ),
@@ -304,16 +304,16 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: 'Technical skills',
+    title: "Technical skills",
     skills: [
       {
-        title: 'Figma',
+        title: "Figma",
         description: <>Ability to design and prototype in Figma.</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
-        title: 'Svelte / Sveltekit',
+        title: "Svelte / Sveltekit",
         description: (
           <>Good understanding of the Svelte framework and ecosystem.</>
         ),
@@ -321,7 +321,7 @@ const about = {
         images: [],
       },
       {
-        title: 'React, Next.js',
+        title: "React, Next.js",
         description: (
           <>Knowledge and experience developing with React and Next.js</>
         ),
@@ -329,7 +329,7 @@ const about = {
         images: [],
       },
       {
-        title: 'Cypress, Jest, Jasmine, Playwright',
+        title: "Cypress, Jest, Jasmine, Playwright",
         description: (
           <>
             Knowledge and experience with testing frameworks for unit,
@@ -344,40 +344,39 @@ const about = {
 };
 
 const blog = {
-  path: '/blog',
-  label: 'Blog',
-  title: 'Writing about design and tech...',
+  path: "/blog",
+  label: "Blog",
+  title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
-
 const experiments = {
-  path: '/experiments',
-  label: 'Experiments',
-  title: 'Experiments',
+  path: "/experiments",
+  label: "Experiments",
+  title: "Experiments",
   description: `Experiments by ${person.name}`,
   experiments: [
     {
-      title: 'GSAP Animations',
+      title: "GSAP Animations",
       description:
-        'Exploring advanced animations and transitions using GSAP (GreenSock Animation Platform)',
-      link: '/experiments/gsap',
-      tags: ['GSAP', 'Animation', 'React'],
+        "Exploring advanced animations and transitions using GSAP (GreenSock Animation Platform)",
+      link: "/experiments/gsap",
+      tags: ["GSAP", "Animation", "React"],
     },
     {
-      title: 'Experiment 2',
-      description: 'Experiment 2 description',
-      link: '/experiments/experiment-2',
-      tags: ['React', 'TypeScript'],
+      title: "Experiment 2",
+      description: "Experiment 2 description",
+      link: "/experiments/experiment-2",
+      tags: ["React", "TypeScript"],
     },
   ],
 };
 
 const work = {
-  path: '/work',
-  label: 'Work',
+  path: "/work",
+  label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -385,54 +384,64 @@ const work = {
 };
 
 const gallery = {
-  path: '/gallery',
-  label: 'Gallery',
+  path: "/gallery",
+  label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {
-      src: '/images/gallery/horizontal-1.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
     },
     {
-      src: '/images/gallery/horizontal-2.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
     },
     {
-      src: '/images/gallery/horizontal-3.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
     },
     {
-      src: '/images/gallery/horizontal-4.jpg',
-      alt: 'image',
-      orientation: 'horizontal',
+      src: "/images/gallery/horizontal-4.jpg",
+      alt: "image",
+      orientation: "horizontal",
     },
     {
-      src: '/images/gallery/vertical-1.jpg',
-      alt: 'image',
-      orientation: 'vertical',
+      src: "/images/gallery/vertical-1.jpg",
+      alt: "image",
+      orientation: "vertical",
     },
     {
-      src: '/images/gallery/vertical-2.jpg',
-      alt: 'image',
-      orientation: 'vertical',
+      src: "/images/gallery/vertical-2.jpg",
+      alt: "image",
+      orientation: "vertical",
     },
     {
-      src: '/images/gallery/vertical-3.jpg',
-      alt: 'image',
-      orientation: 'vertical',
+      src: "/images/gallery/vertical-3.jpg",
+      alt: "image",
+      orientation: "vertical",
     },
     {
-      src: '/images/gallery/vertical-4.jpg',
-      alt: 'image',
-      orientation: 'vertical',
+      src: "/images/gallery/vertical-4.jpg",
+      alt: "image",
+      orientation: "vertical",
     },
   ],
 };
 
-export { person, social, newsletter, home, about, blog, experiments, work, gallery };
+export {
+  person,
+  social,
+  newsletter,
+  home,
+  about,
+  blog,
+  experiments,
+  work,
+  gallery,
+};
