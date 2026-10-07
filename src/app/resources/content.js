@@ -101,10 +101,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm a developer based in Ireland with a unique skill set the blends UX
+        I'm a developer based in Ireland with a unique skill set that blends UX
         design with development. With 20+ years experience designing and
-        building web experiences from concept to production, he is able to
-        uniquely navigate both design and development challenges.
+        building web experiences from concept to production, I am able to
+        uniquely navigate both design and development challenges together.
       </>
     ),
   },
